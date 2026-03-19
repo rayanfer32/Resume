@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Rayan Fernandes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Replaced FontAwesome Kit with reliable cdnjs link to avoid 403 errors -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .print-shadow-none {
+                box-shadow: none !important;
+            }
+
+            @page {
+                margin: 1cm;
+            }
+
+            a::after {
+                content: " (" attr(href) ")";
+                font-size: 0.75rem;
+                color: #64748b;
+            }
+
+            .skill-badge {
+                border: 1px solid #e2e8f0 !important;
+                background: transparent !important;
+                color: black !important;
+            }
+        }
+
+        .skill-badge {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body class="p-0 md:p-8 antialiased">
+
+    <!-- CV Container -->
+    <div
+        class="max-w-[21cm] mx-auto bg-white shadow-2xl min-h-[29.7cm] flex flex-col md:flex-row print-shadow-none overflow-hidden">
+
+        <!-- Sidebar -->
+        <aside class="w-full md:w-[35%] bg-slate-50 p-8 border-r border-slate-200">
+            <!-- Profile Info -->
+            <div class="mb-10 text-center md:text-left">
+                <h1 class="text-3xl font-extrabold text-slate-900 mb-2 leading-tight">Rayan Fernandes</h1>
+                <p class="text-blue-600 font-bold uppercase tracking-widest text-xs mb-6">Senior Frontend Engineer</p>
+
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-center gap-3 text-slate-600">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-blue-500 text-xs"></i>
+                        </div>
+                        <span class="break-all">rayanfernandes9@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-slate-600">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-blue-500 text-xs"></i>
+                        </div>
+                        <span>+91 87222 77308</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-slate-600">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-location-dot text-blue-500 text-xs"></i>
+                        </div>
+                        <span>Mangalore, KA, India</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-slate-600">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+                            <i class="fab fa-linkedin text-blue-500 text-xs"></i>
+                        </div>
+                        <a href="https://linkedin.com/in/rayanfer/"
+                            class="hover:underline font-medium text-slate-900">LinkedIn</a>
+                    </div>
+                    <div class="flex items-center gap-3 text-slate-600">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+                            <i class="fab fa-github text-blue-500 text-xs"></i>
+                        </div>
+                        <a href="https://github.com/rayanfer32"
+                            class="hover:underline font-medium text-slate-900">github.com/rayanfer32</a>
+                    </div>
+                    <div class="flex items-center gap-3 text-slate-600">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-globe text-blue-500 text-xs"></i>
+                        </div>
+                        <a href="https://rayanfer32.vercel.app"
+                            class="hover:underline font-medium text-slate-900">rayanfer32.vercel.app</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-10">
+                <h2
+                    class="text-xs font-black uppercase text-slate-400 tracking-[0.2em] mb-4 border-b pb-2 border-slate-200">
+                    Skills</h2>
+
+                <div class="mb-4">
+                    <p class="text-xs font-bold text-slate-800 mb-2">Frontend & Mobile</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">React.js</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">React Native</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Next.js</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">TypeScript</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Tailwind</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">HTML5/CSS3</span>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-xs font-bold text-slate-800 mb-2">State & Backend</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Redux</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Zustand</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Node.js</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Supabase</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Firebase</span>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-xs font-bold text-slate-800 mb-2">Tools & Quality</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Git/GitHub</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Docker</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">CI/CD</span>
+                        <span class="skill-badge text-[11px] px-2 py-0.5 rounded text-slate-700">Accessibility</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="mb-10">
+                <h2
+                    class="text-xs font-black uppercase text-slate-400 tracking-[0.2em] mb-4 border-b pb-2 border-slate-200">
+                    Education</h2>
+                <div>
+                    <p class="text-sm font-bold text-slate-900">B.E. Electronics & Comm.</p>
+                    <p class="text-xs text-slate-500">Canara Engineering College</p>
+                    <p class="text-xs text-slate-400 mt-1 font-medium italic">2016 – 2020</p>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div>
+                <h2
+                    class="text-xs font-black uppercase text-slate-400 tracking-[0.2em] mb-4 border-b pb-2 border-slate-200">
+                    Certifications</h2>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded bg-emerald-50 flex items-center justify-center text-emerald-600">
+                        <i class="fas fa-shield-halved text-xs"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-slate-900">Google Cloud Architect</p>
+                        <p class="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Certified Professional
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="w-full md:w-[65%] p-10 bg-white">
+            <!-- Summary -->
+            <section class="mb-10">
+                <h2 class="text-xs font-black uppercase text-blue-600 tracking-[0.2em] mb-4 flex items-center gap-2">
+                    Professional Summary
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Experienced software engineer with 5+ years building customer-facing web and mobile applications.
+                    Proven track record of driving major product rewrites, architecting scalable solutions, and
+                    delivering high-impact features under tight deadlines. Deep expertise in React, React Native,
+                    and cross-platform performance optimization.
+                </p>
+            </section>
+
+            <!-- Experience -->
+            <section>
+                <h2 class="text-xs font-black uppercase text-blue-600 tracking-[0.2em] mb-6 flex items-center gap-2">
+                    Experience
+                </h2>
+
+                <div class="space-y-10">
+                    <!-- Role 1 -->
+                    <div>
+                        <div class="flex justify-between items-baseline mb-2">
+                            <h3 class="text-lg font-bold text-slate-900">Frontend / Mobile Developer</h3>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider font-mono">Jan 2023 –
+                                Present</span>
+                        </div>
+                        <p class="text-blue-600 font-semibold text-sm mb-3">EG/AS (Patientsky) — Mangalore, India
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc ml-4">
+                            <li>Led <strong>full rewrite</strong> of the patient app using React Native, delivering
+                                booking, practitioner chat, and clinic search features within 8 months.</li>
+                            <li>Achieved high accessibility (WCAG) compliance and performance gains while simplifying
+                                user experience.</li>
+                            <li>Implemented <strong>shared models and services</strong> for mobile and web, increasing
+                                developer velocity by 30%+.</li>
+                            <li>Enhanced offline behavior and data synchronization reliability across various network
+                                conditions.</li>
+                            <li class="list-none pt-1 italic text-slate-500">Key Impact: Successful launch with improved
+                                usability and reduced friction in booking workflows.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Role 2 -->
+                    <div>
+                        <div class="flex justify-between items-baseline mb-2">
+                            <h3 class="text-lg font-bold text-slate-900">Frontend Developer</h3>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider font-mono">Sep 2022 –
+                                Dec 2022</span>
+                        </div>
+                        <p class="text-blue-600 font-semibold text-sm mb-3">Niveus Solutions — India</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc ml-4">
+                            <li>Delivered React applications for <strong>ICICI Bank</strong>, including high-stakes
+                                dashboards for foreign exchange and mortgage workflows.</li>
+                            <li>Improved core web vitals and speed scores from <strong>35 to 80+</strong> via lazy
+                                loading and code splitting.</li>
+                            <li>Proposed and architected a micro-frontend solution using <strong>Webpack Module
+                                    Federation</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Role 3 -->
+                    <div>
+                        <div class="flex justify-between items-baseline mb-2">
+                            <h3 class="text-lg font-bold text-slate-900">React Developer / Systems Engineer</h3>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider font-mono">May 2021 –
+                                Sep 2022</span>
+                        </div>
+                        <p class="text-blue-600 font-semibold text-sm mb-3">Infosys — India</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc ml-4">
+                            <li>Optimized mission-critical web UI for <strong>aviation runway planning</strong> and
+                                analytics.</li>
+                            <li>Developed real-time data visualization modules using React and Redux patterns.</li>
+                            <li>Introduced automated unit testing reducing UI defects by 20%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer for web only -->
+    <div class="text-center mt-12 mb-8 no-print">
+        <p class="text-slate-400 text-xs">Ready to print. Optimized for A4 format.</p>
+    </div>
+
+</body>
+
+</html>
